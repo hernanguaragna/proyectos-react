@@ -27,6 +27,7 @@ function App() {
                         <Route paht="*">
                           <Error />
                         </Route>  
+                        
 
               </Switch>
       </Router>
