@@ -9,16 +9,21 @@ const CocktailList = () => {
     return <Loading />;
   }
   if(cocktails.length < 1) {
-    return 
+    return( 
     <h2 className="section-title">
       No cocktails matched your search
-      </h2>;
-  }
+      </h2>
+  )}
   return (
-    <div>
-      <h2>Cocktail list</h2>
-    </div>
-  )
+		<section className="section">
+			<h2 className="section-title">Cocktail list</h2>
+			<div className="cocktail-center">
+            {cocktails.map((item) => {
+              return <Cocktail key={item.id} {...item} />;
+            })}
+      </div>
+		</section>
+	);
 }
 
 export default CocktailList
