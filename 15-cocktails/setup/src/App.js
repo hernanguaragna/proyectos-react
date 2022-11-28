@@ -16,18 +16,18 @@ function App() {
              
               <Switch>
                       <Route exact path="/">
-                          <Home />
+                          <Home/>
                         </Route>
                       <Route path="/about">
-                          <About />
+                          <About/>
                         </Route>
                         <Route path="/cocktail/:id">
                           <SingleCocktail />
                         </Route>
-                        <Route paht="*">
+                        <Route path="*">
                           <Error />
                         </Route>  
-                        
+
 
               </Switch>
       </Router>
